@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@font-face {
+  font-family: 'jedifont';
+  src: url('../app/assets/fonts/Starjedi.ttf');
+  font-weight: lighter;
+  font-style: normal;
+}
+.font-my-font{
+  font-family: 'jedifont',sans-serif;
+}
+@font-face {
+  font-family: 'standard';
+  src: url('../app/assets/fonts/uni.otf');
+  font-weight: lighter;
+  font-style: normal;
+}
+.font-my-font2{
+  font-family: 'standard',sans-serif;
+}
+@font-face {
+  font-family: 'minimal';
+  src: url('../app/assets/fonts/Breath_Demo.ttf');
+  font-weight: lighter;
+  font-style: normal;
+}
+.font-my-font3{
+  font-family: 'minimal',sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+.star-wars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: transparent;
+  overflow: hidden;
+  perspective: 500px;
+  z-index: 50;
+  font-family: 'standard';
+}
+
+.crawl {
+pointer-events: auto;
+  color: yellow;
+  position: absolute;
+  width: 80%;
+  max-width: 700px;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%) rotateX(18deg) scale(1.4);
+  animation: crawl 50s linear forwards;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 6rem;
+}
+
+.title {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.title h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+@keyframes crawl {
+  0% {
+    bottom: -50%;
+    transform: translateX(-50%) rotateX(18deg) scale(1.4) translateZ(0);
+  }
+  100% {
+    bottom: 300%;
+    transform: translateX(-50%) rotateX(25deg) scale(1.4) translateZ(-1500px);
+  }
+}
