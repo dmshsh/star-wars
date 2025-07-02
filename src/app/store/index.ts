@@ -2,12 +2,13 @@ import { configureStore } from '@reduxjs/toolkit'
 import charactersReducer from './slices/characterSlice'
 import planetsReducer from './slices/planetsSlice'
 import starshipsReducer from './slices/starshipsSlice'
+import filmsReducer from './slices/filmSlice'
 export const store = configureStore({
   reducer: {
     characters: charactersReducer,
     planets:planetsReducer,
     starships:starshipsReducer,
-    // planets, films, etc.
+    films: filmsReducer,
   },
 })
 

@@ -144,7 +144,7 @@ export default function Home() {
     </div>
     <div className="timeline-start mb-10 md:text-end">
       <time className="font-mono italic">or maybe visit... </time>
-      <div className="text-lg font-black text-white ">Github or LinkedIn</div>
+      <div className="text-lg font-black text-white "><Link className='hover:text-yellow-500'href={'https://github.com/dmshsh/star-wars'}>Github</Link> or <Link className='hover:text-yellow-500'href={'https://linkedin.com/in/dmshamangeldy'}>LinkedIn</Link></div>
 
     </div>
   </li>
